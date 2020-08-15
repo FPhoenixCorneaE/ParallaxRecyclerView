@@ -1,4 +1,4 @@
-package com.wkz.parallaxrecyclerview;
+package com.fphoenixcorneae.demo;
 
 import org.junit.Test;
 

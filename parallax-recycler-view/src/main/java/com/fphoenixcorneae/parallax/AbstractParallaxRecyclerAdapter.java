@@ -1,4 +1,4 @@
-package com.wkz.parallaxrecycler;
+package com.fphoenixcorneae.parallax;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,8 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author wkz
- * @date 2019/6/15 17:21
+ * @date 2019-06-15 17:21
  */
 public abstract class AbstractParallaxRecyclerAdapter<T> extends RecyclerView.Adapter<AbstractParallaxRecyclerAdapter.ParallaxViewHolder> {
 

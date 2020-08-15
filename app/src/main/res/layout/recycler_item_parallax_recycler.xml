@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.wkz.parallaxrecycler.ParallaxImageView
+        <com.fphoenixcorneae.parallax.ParallaxImageView
             android:id="@+id/ivParallaxImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

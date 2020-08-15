@@ -1,9 +1,9 @@
-package com.wkz.parallaxrecyclerview;
+package com.fphoenixcorneae.demo;
 
 import android.content.Context;
 
 import com.bumptech.glide.Glide;
-import com.wkz.parallaxrecycler.AbstractParallaxRecyclerAdapter;
+import com.fphoenixcorneae.parallax.AbstractParallaxRecyclerAdapter;
 
 import java.util.List;
 

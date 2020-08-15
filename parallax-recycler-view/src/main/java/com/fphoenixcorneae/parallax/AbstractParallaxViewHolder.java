@@ -1,12 +1,11 @@
-package com.wkz.parallaxrecycler;
+package com.fphoenixcorneae.parallax;
 
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
- * @author Administrator
- * @date 2019/6/15 11:46
+ * @date 2019-06-15 11:46
  */
 public abstract class AbstractParallaxViewHolder extends RecyclerView.ViewHolder implements OnParallaxImageListener {
 
@@ -19,7 +18,7 @@ public abstract class AbstractParallaxViewHolder extends RecyclerView.ViewHolder
 
     public AbstractParallaxViewHolder(View itemView) {
         super(itemView);
-        getParallaxImageView().setListener(this);
+        getParallaxImageView().setOnParallaxImageListener(this);
     }
 
     @Override

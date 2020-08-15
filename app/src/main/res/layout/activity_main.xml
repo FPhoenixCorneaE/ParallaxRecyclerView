@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.wkz.parallaxrecycler.ParallaxRecyclerView
+    <com.fphoenixcorneae.parallax.ParallaxRecyclerView
         android:id="@+id/rvParallax"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

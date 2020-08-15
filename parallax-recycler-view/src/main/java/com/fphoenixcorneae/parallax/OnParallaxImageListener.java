@@ -1,8 +1,7 @@
-package com.wkz.parallaxrecycler;
+package com.fphoenixcorneae.parallax;
 
 /**
- * @author Administrator
- * @date 2019/6/15 11:50
+ * @date 2019-06-15 11:50
  */
 public interface OnParallaxImageListener {
 

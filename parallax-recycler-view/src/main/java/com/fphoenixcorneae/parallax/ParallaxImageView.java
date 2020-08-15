@@ -1,4 +1,4 @@
-package com.wkz.parallaxrecycler;
+package com.fphoenixcorneae.parallax;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,10 +11,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.widget.AppCompatImageView;
 
-
 /**
- * @author Administrator
- * @date 2019/6/15 11:32
+ * @desc 视差图像显示控件
+ * @date 2019-6-15 11:32
  */
 public class ParallaxImageView extends AppCompatImageView {
 
@@ -25,7 +24,7 @@ public class ParallaxImageView extends AppCompatImageView {
     private boolean shouldCenterCrop = DEFAULT_CENTER_CROP;
 
     private boolean needToTranslate = true;
-    private OnParallaxImageListener listener;
+    private OnParallaxImageListener onParallaxImageListener;
 
     private int rowYPos = -1;
     private int recyclerViewHeight = -1;
@@ -116,12 +115,12 @@ public class ParallaxImageView extends AppCompatImageView {
         this.parallaxRatio = parallaxRatio;
     }
 
-    public void setListener(OnParallaxImageListener listener) {
-        this.listener = listener;
+    public OnParallaxImageListener getOnParallaxImageListener() {
+        return onParallaxImageListener;
     }
 
-    public OnParallaxImageListener getListener() {
-        return listener;
+    public void setOnParallaxImageListener(OnParallaxImageListener onParallaxImageListener) {
+        this.onParallaxImageListener = onParallaxImageListener;
     }
 
     public synchronized boolean doTranslate() {
@@ -129,7 +128,7 @@ public class ParallaxImageView extends AppCompatImageView {
             return false;
         }
 
-        if (getListener() != null && getValues()) {
+        if (getOnParallaxImageListener() != null && getValues()) {
             calculateAndMove();
             return true;
         } else {
@@ -145,7 +144,7 @@ public class ParallaxImageView extends AppCompatImageView {
     }
 
     private boolean getValues() {
-        int[] values = getListener().requireValuesForTranslate();
+        int[] values = getOnParallaxImageListener().requireValuesForTranslate();
         if (values == null) {
             return false;
         }

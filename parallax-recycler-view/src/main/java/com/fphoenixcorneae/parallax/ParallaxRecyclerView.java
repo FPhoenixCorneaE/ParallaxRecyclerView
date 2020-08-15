@@ -1,4 +1,4 @@
-package com.wkz.parallaxrecycler;
+package com.fphoenixcorneae.parallax;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,12 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * @author Administrator
- * @date 2019/6/15 11:42
+ * @desc 视差再循环控件
+ * @date 2019-6-15 11:42
  */
 public class ParallaxRecyclerView extends RecyclerView {
 

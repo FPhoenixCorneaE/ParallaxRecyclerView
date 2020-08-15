@@ -1,10 +1,9 @@
-package com.wkz.parallaxrecycler;
+package com.fphoenixcorneae.parallax;
 
 /**
  * item点击监听
  *
- * @author wkz
- * @date 2019/6/15 18:51
+ * @date 2019-06-15 18:51
  */
 public interface OnItemClickListener {
     /**
